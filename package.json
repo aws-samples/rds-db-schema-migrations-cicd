@@ -1,0 +1,37 @@
+{
+  "name": "rds-db-schema-migrations-cicd",
+  "version": "0.1.0",
+  "bin": {
+    "rds-db-schema-migrations-cicd": "bin/rds-db-schema-migrations-cicd.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "cdk": "cdk",
+    "format": "standard --fix",
+    "migration:make": "node node_modules/.bin/knex migrate:make --migrations-directory lib/lambda/migrations -x ts"
+  },
+  "devDependencies": {
+    "@types/node": "^10.17.27",
+    "aws-cdk": "^1.125.0",
+    "aws-sdk": "^2.999.0",
+    "knex": "^0.95.4",
+    "pg": "^8.5.0",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.4.2"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-codecommit": "^1.125.0",
+    "@aws-cdk/aws-codepipeline": "^1.125.0",
+    "@aws-cdk/aws-ec2": "^1.125.0",
+    "@aws-cdk/aws-iam": "^1.125.0",
+    "@aws-cdk/aws-lambda": "^1.125.0",
+    "@aws-cdk/aws-lambda-nodejs": "^1.125.0",
+    "@aws-cdk/aws-rds": "^1.125.0",
+    "@aws-cdk/core": "^1.125.0",
+    "@aws-cdk/pipelines": "^1.125.0",
+    "@types/aws-lambda": "^8.10.83",
+    "lambda": "file:lib/lambda",
+    "source-map-support": "^0.5.16"
+  }
+}

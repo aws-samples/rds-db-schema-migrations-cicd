@@ -1,0 +1,8 @@
+{
+  "name": "lambda",
+  "version": "1.0.0",
+  "dependencies": {
+    "knex": "^0.95.4",
+    "pg": "^8.5.0"
+  }
+}
