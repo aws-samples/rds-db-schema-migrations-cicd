@@ -135,3 +135,12 @@ Clean the production account resources created by the CI/CD Pipeline:
 ```
 aws cloudformation delete-stack --stack-name Production-PrimaryStack
 ```
+
+## Security
+
+See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
+
+## License
+
+This library is licensed under the MIT-0 License. See the LICENSE file.
+
