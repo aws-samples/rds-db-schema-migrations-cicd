@@ -22,7 +22,12 @@ The CI/CD pipeline is built using the [CDK Pipelines module](https://docs.aws.am
 npm install
 ```
 
-Bootstrap the development environment: 
+Bootstrap the development and production accounts:
+
+```
+chmod +x cdk-boostrap.sh
+./cdk-boostrap.sh <DEV ACCOUNT ID> <PROD ACCOUNT ID> <REGION> <REPOSITORY NAME in your account> <AWS PROD PROFILE> <AWS DEV PROFILE>
+```
 ​
 ```
 npx cdk bootstrap  \ 
