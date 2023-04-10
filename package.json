@@ -14,7 +14,7 @@
   "devDependencies": {
     "@types/node": "^10.17.27",
     "aws-cdk": "^1.125.0",
-    "aws-sdk": "^2.999.0",
+    "aws-sdk": "^2.1354.0",
     "knex": "^2.4.0",
     "pg": "^8.5.0",
     "ts-node": "^9.0.0",
